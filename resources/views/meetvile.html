@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<title>meetville-is-mostly-a-popular-international</title>
+<style>
+    .bignav {
+        padding: 20px 20px;
+
+    }
+
+    .hborder {
+        border: 1px solid;
+    }
+
+    .cntext {
+        padding: 10%;
+        margin-top: 5%;
+        font-size: 30px;
+        background-image: linear-gradient(to right top, #2a93d2, #238fd0, #1c8bce, #1486cc, #0a82ca);
+    }
+
+    .imglogo {
+        margin-top: 100px;
+    }
+
+    .textmidd {
+        margin-left: 100px;
+        margin-top: 70px;
+        font-size: 17px;
+
+    }
+
+    .dgrey {
+        margin-top: 100px;
+        padding: 7%;
+        font-size: 18px;
+        line-height: 50px;
+        background-image: linear-gradient(to right top, #efefef, #e6e6e6, #dddddd, #d4d4d4, #cbcbcb);
+    }
+
+    .end {
+        background-image: linear-gradient(to right top, #232323, #232323, #232323, #232323, #232323);
+        padding: 10px;
+
+    }
+
+    .videol {
+        width: 900px;
+        height: 500px;
+
+
+
+        display: block;
+        margin: auto;
+
+
+    }
+
+    .btv {
+        width: 315px;
+        height: 67px;
+
+        font-size: xx-large;
+    }
+
+    .footer {
+        background-color: grey;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        color: white;
+
+
+
+    }
+
+    .copy {
+
+        margin-left: 60px;
+    }
+
+    /*
+    DEMO STYLE
+*/
+
+    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fafafa;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+        /* color: #999; */
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .navbar {
+        padding: 15px 10px;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-btn {
+        box-shadow: none;
+        outline: none !important;
+        border: none;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed #ddd;
+        margin: 40px 0;
+    }
+
+    /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+
+    }
+
+    #sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        background: #7386D5;
+        color: #fff;
+        transition: all 0.3s;
+    }
+
+    #sidebar.active {
+        margin-right: -250px;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #6d7fcc;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p {
+        color: #fff;
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+    #sidebar ul li a:hover {
+        color: #7386D5;
+        background: #fff;
+    }
+
+    #sidebar ul li.active>a,
+    a[aria-expanded="true"] {
+        color: #fff;
+        background: #6d7fcc;
+    }
+
+    a[data-toggle="collapse"] {
+        position: relative;
+    }
+
+    .dropdown-toggle::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    ul ul a {
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: #6d7fcc;
+    }
+
+    ul.CTAs {
+        padding: 20px;
+    }
+
+    ul.CTAs a {
+        text-align: center;
+        font-size: 0.9em !important;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+
+
+    /* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+    #content {
+        width: 100%;
+        padding: 20px;
+        min-height: 100vh;
+        transition: all 0.3s;
+    }
+
+    /* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+    @media (max-width: 768px) {
+        #sidebar {
+            margin-left: -250px;
+        }
+
+        #sidebar.active {
+            margin-left: 0;
+        }
+
+        #sidebarCollapse span {
+            display: none;
+        }
+    }
+
+    .spacing p {
+        line-height: 1.8;
+    }
+
+    /*SOCİAL İCONS*/
+
+    /* footer social icons */
+
+    ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left: 0 !important;
+        padding: 0;
+        align-items: center;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+
+    /* footer social icons */
+
+    .social-network a.icoFacebook:hover {
+        background-color: #3B5998;
+    }
+
+    .social-network a.icoLinkedin:hover {
+        background-color: #007bb7;
+    }
+
+    .social-network a.icoTwitter:hover {
+        background-color: #007bb7;
+    }
+
+    .social-network a.icoPinterest:hover {
+        background-color: #007bb7;
+    }
+
+    icoGoogle .social-network a.icoGoogle:hover {
+        background-color: #007bb7;
+    }
+
+    .social-network a.icoGoogle:hover {
+        background-color: #007bb7;
+    }
+
+    .social-network a.icoEmail:hover {
+        background-color: #007bb7;
+    }
+
+    .social-network a.icoFacebook:hover i,
+    .social-network a.icoLinkedin:hover i,
+    .social-network a.icoTwitter:hover i,
+    .social-network a.icoPinterest:hover i,
+    .social-network a.icoGoogle:hover i,
+
+    .social-network a.icoEmail:hover i {
+        color: #fff;
+    }
+
+    .social-network a.socialIcon:hover,
+    .socialHoverClass {
+        color: #44BCDD;
+    }
+
+    .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .social-circle li i {
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+
+    .social-circle i {
+        color: #595959;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+
+    .social-network a {
+        background-color: #F9F9F9;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <div class=" container-fluid hborder">
+        <div class="row ">
+            <div class="col-md-12 col-sm-12 ">
+                <nav class="navbar navbar-light navbar-expand-md    justify-content-md-center justify-content-start">
+                    <a class="navbar-brand  d-inline " href=""><img src="img/Stockiest.png "class="img-fluid" width="150" height="80" 
+                            alt=""></a>
+                    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse"
+                        data-target="#collapsingNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse justify-content-between align-items-center w-100"
+                        id="collapsingNavbar2">
+                        <ul class="navbar-nav mx-auto text-md-center text-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="marketupdate.html"><strong>Market Update</strong> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white rounded bg-primary" href="premiummbr.html"><strong>Free Login
+                                </strong> </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><strong>Contact</strong> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="membrlogin.html"><strong> Premium Member</strong></a>
+                            </li>
+                            <a class="nav-link" href="#_"><i class="fa fa-search"></i></a>
+                        </ul>
+                        <ul class="nav   navbar-nav p-3 m-3    ">
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a> </li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-instagram"></i></a> </li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-linkedin"></i></a> </li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- SIDBAR NAV -->
+
+    <div class="wrapper">
+        <!-- toggle button -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                        <span>Sidebar Menu</span>
+                    </button>
+                </div>
+
+            </nav>
+
+            <!-- Page Content  -->
+            <div class="container text-center">
+                <a href="https://www.stockiest91.com/category/blog/" rel="category tag">BLOGS</a>
+                <h1>Meetville is mostly a Popular International dating Platform Whereby Singles May well locate a
+                    Perfect Go together with</h1>
+
+                <span>Posted on
+                    <a href="https://www.stockiest91.com/meetville-is-mostly-a-popular-international-10/">JUNE 12,2021
+                        BY STOCKIEST91</a>
+                </span>
+            </div>
+
+            <div class="container spacing mt-4">
+                <p>Meetville is mostly a Popular International dating Platform Whereby Singles May well locate a
+                    Perfe<span id="more-3661"></span>ct Go together with </p>
+
+
+                <p> <strong> This approach Scoop: </strong> Meetville gives singles the opportunity to install across
+                    site limits along with borders, thus finding truly love doesn’ big t have to be a neighborhood
+                    affair. Ones dating app has a customized match protocol that reacts over thirty-one million
+                    affiliate marketer in the Oughout. S., The european union, France, Queensland, Spain, together with
+                    other countries. Irrespective of whether you’ re looking for a ground breaking friend, to start a
+                    date, or a possibly partner, Meetville can use some sophisticated online dating tools to guide you
+                    recommend very much the same value users within just driving long distance and around foreign areas.
+                </p>
+
+                <p> The online dating scene will continue to expand crowded by means of swiping application that enhance
+                    superficial accommodates based on knee-jerk first feedback. These apps foster a person’s competitive
+                    habitat where the a friend or relative with the perfect photo techniques wins unveiled. Meanwhile,
+                    singles with more identity and lower selfies tend to be left behind. </p>
+
+
+                <p> Fortunately, not all relationship apps have stuck for a traditional swiping formula. &nbsp;
+                    Meetville incorporates a smart internet dating process that can offer much more values-driven will
+                    abide by and chitchats. </p>
+
+
+                <p> The Meetville team provides changed an criteria that shows beneath the surface to identify a well
+                    known fact compatibility. A good system requires a person’ ersus age, status, religion, in addition
+                    to background towards mind when advising viable date for your wedding prospects — and it doesn’ t
+                    placed restrictive holiday time requirements. </p>
+
+
+                <p> “ Meetville might be the place as soon as advanced know-how come into manage to help you find your
+                    love of his life, ” that Meetville company said. </p>
+
+
+                <p> Meetville fosters a agreeable dating natural world with quite a few active customers. </p>
+
+
+                <p> Today’ ersus dating spot can seem intimidating along with the average effortless person, still
+                    Meetville can help ease any risk of strain of interested in a partner through the use of similar
+                    opinions and character. And, what’s even better, singles don’ t must leave home in order to reach
+                    date potential customers all over the world. </p>
+
+
+                <p> Meetville pairs adults based on standard interests and search filtration to help person’s narrow
+                    decrease the relationship pool. </p>
+
+
+                <p> “ The only impression we want to obtain is to establish people happy, ” a person’s Meetville company
+                    told you and me. “ Ones own impact is invariably clearly seen in all the posts we acquire from much
+                    of our grateful customers. We are triggered to develop most of our product and become the best
+                    relationship service with the existing additionally future affiliate marketer. ” </p>
+
+
+                <h2> A world Community Using Over thirty-one Million Customers </h2>
+                <br>
+
+
+                <p> Anyone over the age of 18 are going to join a Meetville mobile network by getting your dating page,
+                    uploading an image, and choosing a quick list of questions. The whole tactic takes fewer than seven
+                    units from could finish. When the profile is frequently complete, cost-free members are able to send
+                    loves to profiles that can interest the dog and find quality local video game titles. </p>
+
+
+                <p> Meetville’ ohydrates matching benefits depend on individual search solutions, profile advice, and
+                    personality questions, therefore it is far from a great one-match-fits-all method. </p>
+
+
+                <p> “ Much of our goal may be to provide suits based on very much the same interests in addition to
+                    beliefs, ” the Meetville team talked about. “ Tests show that people with typical values contain a
+                    propensity so that you can build a sturdy and pleased relationship. ” </p>
+
+
+                <p> Over the years, the Meetville local has grown to help you out encompass round 31 million singles
+                    around the world. The majority of families are involving 20 and additionally 60 years, and are
+                    looking for a steady bond. The online dating app will come in all factors of the modern culture, and
+                    it has finish up particularly favorite in the Anyone. S., Queensland, Canada, Portugal, Germany,
+                    along with Spain. </p>
+
+
+                <p> Copy the 100 % 100 % free dating get to enjoy real-time matching not to mention chatting. </p>
+
+                <p> Interacting with a new people on Meetville isn’ watts not left round chance. Mass media
+                    announcements dating practical application pairs couples through a mix of curated online dating and
+                    user-generated search purification. That way, a lot of people can position their rely upon the key
+                    elements to find matches or observe their own custom preferences on the inside online dating state
+                    of affairs. </p>
+
+                <p> Meetville comes equipped with affordable ongoing plan that can unlocks VIP features, such as
+                    unlimited messaging streams also, the ability to find out private photo galleries. Paid back
+                    subscribers may additionally see that’s got liked their particular dating balance and stick to more
+                    partaking conversations by using interested buddies as a result. </p>
+
+
+                <p> “ We really believe that as soon as users usually are paying, they might be more focused upon the
+                    site, which means these people are serious about dating, ” the Meetville team proclaimed. </p>
+
+                <h2> The Superior Matching Solution Uses AI Technology </h2>
+                <br>
+
+                <p> Meetville adds materials to international dating by progressing people based on their account
+                    information using online process. The protocol gathers info, learns because of user developments,
+                    and tells which grown persons will enhance each other the very best. </p>
+
+
+                <p> “ This approach matching protocol is what actually tends to make us energized, ” a Meetville
+                    organization said. “ It is affected by artificial learning ability and we can match the general
+                    public according to numerous parameters. ” </p>
+
+
+                <p> Singles choosing a new oven long-term adore can profit by Meetville’ ersus quality-driven internet
+                    dating and urgent communication resources. The partnership app will save time period and relieve
+                    stress by way of delivering corresponding value matches in demand. </p>
+
+
+                <p> Singles can take change of their absolutely adore lives simply by searching for matches on
+                    Meetville. </p>
+
+                <p> The Meetville app offers streamlined a internets dating program to help users go from matching to
+                    chatting to help you out dating with no missing some beat. It’s affirming means put this approach
+                    user’ lenses needs key and highlight promising date opportunities around the clock and one week a
+                    week. </p>
+
+                <p> “ It is essential for us that our people enjoy sticking with us not to mention finding completely
+                    new dates using our assist, ” this Meetville group said. “ That is why nearly everybody plan to such
+                    as a series of completely unique features solely available for this particular members. ” </p>
+
+                <p> Meetville comes with a team along with talented coders, writers, in addition to marketers who? re
+                    continually generating the application and writing the enhancing algorithm to aid best fulfill a
+                    unique and fast-changing audience. </p>
+
+
+                <h2> Dwelling to Countless Online Enjoy Stories </h2>
+                <br>
+
+                <p> Meetville has loved a lot of successes over the years. That app comes with gotten approximately 22,
+                    000 five-star fundamental reviews, including 100s of testimonials by means of happy adults. A few
+                    Meetville employees have got even satisfied their significant others with the dating request. </p>
+                <p> One Meetville user sent a message with the team to tell a personal adore story. “ You people have to
+                    know consumers changed your entire lifestyle, ” which letter talked about. “ A tad over a year ago,
+                    Most people felt 100 % lonely, combined with I really needed to find a good man and initiate a
+                    family. ” </p>
+                <p> After searching for Meetville, someone had a few promising affairs and shortly connected with
+                    someone special. The couple’ s starting date made it through late in the evening even though they
+                    couldn’ l stop unveiling everything one of many in common. Once-a-year later, they are living
+                    alongside one another, engaged, in addition to expecting a baby. </p>
+                <p> A Meetville group works frustrating to ensure owners have a superb and flourishing experience
+                    online. </p>
+                <p> Meetville thoughts and opinions drive property the effect the international dating app might have
+                    some on a single person’ s lifestyle. It’ lenses not just concerning finding a self-esteem boost in
+                    addition to distraction. Some app’ vertisements value introductions could tier the start of a
+                    service new not to mention bring even more love within the world. </p>
+                <p> “ What I’d prefer about Meetville is it truly is really suitable for true links, not just ideal for
+                    hookups, ” said Chad T. with Google Play. “ Actually complimenting is indeed wise, and just about
+                    every match which unfortunately get suits my personal taste. ” </p>
+                <p> Some Meetville supplier takes ego in accepting so many genuine messages using testimonials. “ Every
+                    thing in our fun-based activities is being obtained for adore, ” which team’ vertisements
+                    spokesperson talked about. “ As soon as you think that that which we do makes a difference and other
+                    people happy, you feel that it is all of worth it. ” </p>
+
+                <h2> Meetville Recieves a Trusted &amp; High-Quality Dating Pool </h2>
+                <br>
+                <p> Quite a few online daters have obtained burned out of swiping about dating account pictures 30 days
+                    after thirty day period and daytime after night without results. Swiping can be quick and easy, it
+                    also means almost nothing if this doesn’ big <a href="https://russiandatingreviews.com/">foreign
+                        brides</a> t give clients the results they desire most. That’ s exactly why would someone
+                    Meetville contains stepped in place its swiping game standing more benefits into the wrists and
+                    hands of singles everywhere. </p>
+                <p> Some sort of Meetville program uses a semi-pro algorithm to produce online daters a boost together
+                    with help these individuals find versions own perfect pick. The demand does a lot of work affiliated
+                    with the sequences to identify compatibility, support world-wide-web correspondence, in addition to
+                    inspire amorous relationships that go on. </p>
+                <p> “ Holding a job at a online business that acquires dating applications is striking because you are
+                    hiring electric rock megastars to help many people around the globe satisfy, ” your Meetville
+                    organization said. “ We may possibly not know most of the happy aficionados in person, then again
+                    thought much of our hard work in addition to ideas possess previously helped — and sustain helping —
+                    singles find out their take pleasure in (or in any respect they are browsing for) is normally pretty
+                    effective. ” </p>
+
+               
+
+
+            </div>
+            <br>
+            <div class="col-md-10 text-center">
+
+                
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.stockiest91.com%252Fmeetville-is-mostly-a-popular-international-10%252F&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ur_PK" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Fwww.stockiest91.com%2Fmeetville-is-mostly-a-popular-international-10%2F%26title%3DMeetville%2520is%2520mostly%2520a%2520Popular%2520International%2520dating%2520Platform%2520Whereby%2520Singles%2520May%2520well%2520locate%2520a%2520Perfect%2520Go%2520together%2520with" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.stockiest91.com%2Fmeetville-is-mostly-a-popular-international-10%2F" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.pinterest.com/?show_error=true" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="https://plus.google.com/up/?continue=https://plus.google.com/share?url%3Dhttps://www.stockiest91.com/meetville-is-mostly-a-popular-international-10/" class="icoGoogle" title="Google"><i class="fa fa-google-plus-official"></i></a></li>
+                    <li><a href="mailto:enteryour@addresshere.com?subject=Meetville%20is%20mostly%20a%20Popular%20International%20dating%20Platform%20Whereby%20Singles%20May%20well%20locate%20a%20Perfect%20Go%20together%20with&body=Check%20this%20out:%20https://www.stockiest91.com/meetville-is-mostly-a-popular-international-10/" class="icoEmail" title="Email"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+            <br>
+            <hr>
+            <p class="text-center">
+
+                This entry was posted in <a href="https://www.stockiest91.com/category/blog/"
+                    rel="category tag">blog</a>. Bookmark the <a
+                    href="https://www.stockiest91.com/lesbiancougardating-offers-an-ultrachic-16/"
+                    title="Permalink to LesbianCougarDating Offers an Ultrachic Specialized niche Dating On line site for Senior citizen &amp; Vibrant Women"
+                    rel="bookmark">permalink</a>.
+            </p>
+            <hr>
+            <div class="row mt-3 ml-4">
+
+                <img width="150" height="150" src="img/default_avatar.jpg" alt="">
+                <h5 class="ml-4 mt-4"><b> STOCKIEST91</b>
+                </h5>
+
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <a href="https://www.stockiest91.com/eharmony-love-tales%ef%bc%9ajanine-and-andrew/"
+                            rel="prev"><span class=" "><i class="fa fa-angle-left w3-xlarge "
+                                    aria-hidden="true"></i></span> eharmony Love Tales：Janine and Andrew</a>
+
+                    </div>
+                    <div class="col-md-6 ">
+                        <a href="https://www.stockiest91.com/exactly-why-is-a-weblog-about-privateness-important/"
+                            rel="prev"><span class=" "></span>Exactly why is A Weblog About Privateness Important? <i class="fa fa-angle-right w3-xlarge "
+                            aria-hidden="true"></i> </a>
+
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <h4><b> Leave a Reply</b> </h4>
+                <p>Your email address will not be published. Required fields are marked </p>
+                <h5>Comment</h5>
+
+                <p class="comment-form-comment">
+                    <textarea id="comment" name="comment" cols="100" rows="5" maxlength="65525"
+                        required="required"></textarea>
+                </p>
+                <div class="form-row">
+                    <div class="col-md-3 mb-">
+                        <label for="validationCustom01"><b>Name</b> </label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="" required>
+
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom02"><b>Email</b> </label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="" required>
+
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom02"><b> website</b></label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="" required>
+
+                    </div>
+
+
+                </div>
+                <input name="submit" type="submit" id="submit" class="submit btn-primary btn-lg" value="Post Comment">
+            </div>
+
+
+        </div>
+        <!-- SIDEBAR -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li class="active">
+
+
+                    <a href="#homeSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Market
+                        Strategy</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+
+                        <li>
+                            <a href="kse100.html">KSE100 Index</a>
+                        </li>
+                        <li>
+                            <a href="announcement.html">Announcements</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Technical Analysis</a>
+                </li>
+                <li>
+                    <a href="#">Fundamental Analysis</a>
+                </li>
+                <li>
+                    <a href="comodities.html">Commodities</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Learning
+                        with Stockiest91</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="educationaposts.html">Educational Posts</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+    </div>
+
+
+    </div>
+
+
+    <!-- SIDBAR NAV -->
+
+    <br>
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer p-4">
+        <p class=" copy ">copyright 2021 © <strong>Stockiest 91</strong></p>
+    </div>
+    <!-- FOOTER END -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
